@@ -1,0 +1,76 @@
+code, pre{
+    font-family: Courier;
+    font-size: 0.8em;
+}
+em{
+    font-style: italic;
+}
+strong{
+    font-weight: bolder;
+}
+sup{
+    position: relative;
+    top: -0.75em;
+    font-size: 50%;
+}
+.text{
+    position: absolute;
+    color: #0b0b0b;
+    position: static;
+}
+
+.page{
+    background-color: #F0F0F0;
+    color: #0b0b0b;
+}
+
+.center{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    display: box;
+    box-orient: horizontal;
+    box-pack: center;
+    box-align: center;
+
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.0;
+  }
+  to {
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.visible.fade{
+    -webkit-animation-name:             fade; 
+    -webkit-animation-duration:         1s; 
+    -webkit-transition-timing-function: linear;
+    -webkit-transform-origin: center center;
+}
+
+.visible.rotate{
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         .5s; 
+    -webkit-transform-origin:           center center;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-animation-iteration-count:  1;
+}
